@@ -61,7 +61,7 @@ nav ul li a.selected {
     text-shadow: 1px 1px 0px #000 
 }
 
-.container {
+.my_container {
     max-width: 800px;
     margin: -100px auto 0;
     background-color: #fff;
