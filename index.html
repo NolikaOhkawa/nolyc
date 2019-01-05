@@ -13,38 +13,99 @@
     <!-- BootstrapのJS読み込み -->
     <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
   </head>
-  <body>
+  <body class="bg-color">
       <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="selected">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#"><img src="https://img.icons8.com/ios/50/000000/circled-n.png" width="30" height="30" alt="Nolika">  Nolika Oh!kawa</a>
+              <!--.navbar-toggle is now .navbar-toggler and has different styles and inner markup (no more three <span>s). -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-#site-menu">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">HOME</a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">ABOUT<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="https://nolyc.net/" target="_blank">BLOG</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="https://nolyc.net/contact_en/" target="_blank">CONTACT</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              SNS
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="https://www.facebook.com/nolika.ohkawa" target="_blank">Facebook</a>
+                              <a class="dropdown-item" href="https://twitter.com/noliiiiii" target="_blank">Twitter</a>
+                              <a class="dropdown-item" href="https://www.instagram.com/s10124no/?hl=en" target="_blank">Instagram</a>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
         <div id="logo">
             <img src="profile.jpg" alt="Nolika Ohkawa">
             <h1>Nolika Ohkawa</h1>
         </div>
     </header>
-    <div class="my_container">
+    <div class="my-container">
         <section>
             <h2>About</h2>
             <h3>Introduction</h3>
-            <p>Nolika Ohkawa(programmer)</p>
-            <p>from Japan, Yokohama. Working as a freelance engineer</p>
-            <p>Thesedays I have more and more oppotunities to work with <span class="red">Ruby on rails</span>.
-        work</p>
-            <p>If you would be interested in me checking my portfolio and you want to work with me, let me know from <a href="contact.html">Contact</a> form.</p>
+            <p>
+                Hi there. I'm Nolika Oh!kawa. (writer, programmer)<br>
+                Thank you for visitting me. I'm Japanese writer and programmer and now working as a freelance.<br>
+                Thesedays I have more and more oppotunities to visit Philippines and California for work,<br>
+                so if you would be interested in me, please check my portfolio anyway.<br>
+                I'm waiting for your message! from the <a href="https://nolyc.net/contact_en/" target="_blank">CONTACT</a> which on the navigation on this page.<br>
+                Of course, it's okay to drop me a line by SNS as well. Thank you.</p>
             <h3>Links</h3>
             <ul>
                 <li><a href="https://www.facebook.com/nolika.ohkawa">Facebook</a></li>
                 <li><a href="https://twitter.com/noliiiiii">Twitter</a></li>
             </ul>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">card title</h4>
+                            <p class="card-text">card text</p>
+                            <a href="#" class="btn btn-primary">go ahead</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body bg-dark text-white">
+                            <img src="https://img.icons8.com/ios/100/000000/circled-n.png" class="card-img" alt="">
+                            <div class="card-img-overlay">
+                                <h4>Card title</h4>
+                                <p class="card-text">This is the text</p>
+                                <p class="card-text">last updated 3mins ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                    <div class="card bg-dark text-white">
+                        <img src="" class="card-img" alt="">
+                        <div class="card-img-overlay">
+                            <h4>Card title</h4>
+                            <p class="card-text">This is the text</p>
+                            <p class="card-text">last updated 3mins ago</p>
+                        </div>
+                    </div> !-->
+            </div>
         </section>
         <footer>
             <p>&copy; 2018 Nolika Ohkawa.</p>
         </footer>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -52,3 +113,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>
+<!-- プログラムのイメージ作成してカード全体をリンクにする
